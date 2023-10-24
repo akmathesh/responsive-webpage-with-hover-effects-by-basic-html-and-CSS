@@ -67,7 +67,7 @@ header {
 
 .banner {
 /*   background-image: url("/assets/images/stacked-waves-haikei.svg"); */
-  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   background-size: cover;
   height: 100dvh;
 }
