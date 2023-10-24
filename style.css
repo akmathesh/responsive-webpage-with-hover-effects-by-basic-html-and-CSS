@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+body {
+  width: 100%;
+  height: 100dvh;
+}
+
+.container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+header {
+  background-color: darkslateblue;
+  position: sticky;
+  top: 0;
+}
+
+.nav_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h2 {
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-left: 10px;
+}
+
+.logo h2::first-letter {
+  color: rgb(255, 68, 0);
+}
+
+.links ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+
+.links ul li a:hover {
+  border-right: 3px solid #ff6200;
+  border-bottom: 3px solid #ff6200;
+  border-left: 3px solid #ff6200;
+  border-radius: 7px;
+}
+
+.banner {
+  background-image: url("/assets/images/stacked-waves-haikei.svg");
+  background-size: cover;
+  height: 100dvh;
+}
+
+.banner h1,
+p,
+button {
+  color: #fff;
+}
+
+.banner h1 {
+  font-size: 70px;
+  padding: 30px 0px;
+  display: inline-block;
+}
+
+.banner h1::first-letter {
+  color: #ff3c00;
+}
+
+.banner h1::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #ff3c00;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform 300ms;
+  transform-origin: right;
+}
+
+.banner h1:hover:after {
+  transform: scaleX(1);
+}
+
+.banner p {
+  font-size: 20px;
+  padding: 30px 0px 40px 0px;
+}
+
+.banner_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.content-1 {
+  box-sizing: border-box;
+  padding: 0px 30px 0px 0px;
+}
+
+.content-1 span {
+  color: #80ff00;
+}
+
+.btn-1,
+.btn-2 {
+  background: rgb(193, 75, 19);
+  background: linear-gradient(
+    186deg,
+    rgba(193, 75, 19, 1) 0%,
+    rgba(121, 9, 73, 1) 35%,
+    rgba(0, 227, 255, 1) 100%
+  );
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.btn-1:hover,
+.btn-2:hover {
+  border-right: 3px solid #f6ff00;
+  border-bottom: 3px solid #f6ff00;
+  border-left: 3px solid #f6ff00;
+  border-radius: 7px;
+}
+
+.image_svg img {
+  width: 500px;
+  height: 500px;
+}
+
+.menu img {
+  display: none;
+}
+
+@media screen and (max-width: 1079px) {
+  .links {
+    display: none;
+  }
+
+  .banner_wrapper {
+    display: block;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+    padding: 15px 0px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner p {
+    font-size: 16px;
+    padding: 40px 0px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .whole_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    color: white;
+    width: 50px;
+  }
+
+  .image_svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image_svg img {
+    display: none;
+  }
+
+  /* .menu img {
+    width: 50px;
+    height: 100px;
+    color: #fff;
+  } */
+}
+
+/* @media screen and (min-width: 1079px) {
+  .menu {
+    display: none;
+  }
+} */
