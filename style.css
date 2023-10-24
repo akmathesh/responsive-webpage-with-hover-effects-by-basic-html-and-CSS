@@ -67,8 +67,8 @@ header {
 }
 
 .banner {
-/*   background-image: url("/assets/images/stacked-waves-haikei.svg"); */
-  background-color: #2A2B2E;
+  background-image: url("./assets/images/stacked-waves-haikei.svg");
+/*   background-color: #2A2B2E; */
   background-size: cover;
   height: 100dvh;
 }
